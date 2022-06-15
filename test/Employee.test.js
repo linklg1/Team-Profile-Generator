@@ -4,8 +4,8 @@ describe("Employee", () => {
     describe("Initialization", () => {
      
       it("Can instantiate Employee instance", () => {
-        const e = new Employee();
-        expect(typeof(e)).toBe("object");
+        const n = new Employee();
+        expect(typeof(n)).toBe("object");
         });  
      
         it("should create an employee object with a name, id and email if provided with valid arguments", () => {
@@ -67,32 +67,32 @@ describe("Employee", () => {
   describe("getName", () => {
       it("Can get name via getName() function", () => {
           const testValue = "Trevor";
-          const e = new Employee(testValue);
-          expect(e.getName()).toBe(testValue);
+          const n = new Employee(testValue);
+          expect(n.getName()).toBe(testValue);
       });
   });
       
   describe("getId", () => {
       it("Can get id via getId()", () => {
           const testValue = 123;
-          const e = new Employee("Bob", testValue);
-          expect(e.getId()).toBe(testValue);
+          const n = new Employee("Bob", testValue);
+          expect(n.getId()).toBe(testValue);
       });
   });
       
   describe("getEmail", () => {
       it("Can get email via getEmail()", () => {
           const testValue = "email@email.com";
-          const e = new Employee("Bob", 123, testValue);
-          expect(e.getEmail()).toBe(testValue);
+          const n = new Employee("Bob", 123, testValue);
+          expect(n.getEmail()).toBe(testValue);
       });
   });
       
   describe("getRole", () => {
       it("getRole() should return \"Employee\"", () => {
           const testValue = "Employee";
-          const e = new Employee("Trevor", 123, "email@email.com");
-          expect(e.getRole()).toBe(testValue);
+          const n = new Employee("Trevor", 123, "email@email.com");
+          expect(n.getRole()).toBe(testValue);
       });
   });
   })
