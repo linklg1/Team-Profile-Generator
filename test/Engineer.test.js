@@ -1,10 +1,10 @@
 const Engineer = require ("../lib/Engineer.js");
 
 describe("GitHub", () => {
-  it("Can set GitHUb account via constructor", () => {
+  it("Can set GitHub account via constructor", () => {
     const testValue = "GitHubUser";
     const n = new Engineer("Tyler", 123, "email@email.com", testValue);
-    expect(n.github).toBe(testValue);
+    expect(n.GitHub).toBe(testValue);
    });
 
   describe("getRole", () => {
@@ -15,10 +15,10 @@ describe("GitHub", () => {
   });
   });
   describe ("getGitHub", () => {
-  it("Can get GitHub username via getGithub()", () => {
+  it("Can get GitHub username via getGitHub()", () => {
     const testValue = "GitHubUser";
     const n = new Engineer("Tyler", 123, "email@email.com", testValue);
-    expect(n.getGithub()).toBe(testValue);
+    expect(n.getGitHub()).toBe(testValue);
   });  
   });
 });

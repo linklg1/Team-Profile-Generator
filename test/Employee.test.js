@@ -4,24 +4,24 @@ describe("Employee", () => {
     describe("Initialization", () => {
      
       it("Can instantiate Employee instance", () => {
-        const n = new Employee();
+        const n = new Employee("Trevor", 123, "email@email.com");
         expect(typeof(n)).toBe("object");
         });  
      
         it("should create an employee object with a name, id and email if provided with valid arguments", () => {
             // Creating a new instance to test with valid arguments
-            const Employee = new Employee("Trevor", 123, "email@email.com");
+            const employee = new Employee("Trevor", 123, "email@email.com");
 
-            expect(Employee.name).toEqual("Trevor");
-            expect(Employee.id).toEqual(123);
-            expect(Employee.email).toEqual("email@email.com");
+            expect(employee.name).toEqual("Trevor");
+            expect(employee.id).toEqual(123);
+            expect(employee.email).toEqual("email@email.com");
         });
 
         it("should throw an error if provided no arguments", () => {
             // Creating a callback to test invalid arguments and make sure an error is returned
             const callback = () => new Employee();
 
-            expect(callback).toThrow();
+            expect(callback).toThrowError();
         });
 
         it("should throw a specific error if 'name' is not a string", () => {
@@ -42,7 +42,7 @@ describe("Employee", () => {
 
         it("should throw a specific error if 'id' is not a number", () => {
             const callback = () => new Employee("Robert", "2", "email@email.com");
-            const error = new Error("Expected parameter 'id' to be a number");
+            const error = new Error("Expected parameter 'id' to be a non-negative number");
       
             expect(callback).toThrowError(error);
           });
@@ -67,7 +67,7 @@ describe("Employee", () => {
   describe("getName", () => {
       it("Can get name via getName() function", () => {
           const testValue = "Trevor";
-          const n = new Employee(testValue);
+          const n = new Employee(testValue, 123, "email@email.com");
           expect(n.getName()).toBe(testValue);
       });
   });
@@ -75,7 +75,7 @@ describe("Employee", () => {
   describe("getId", () => {
       it("Can get id via getId()", () => {
           const testValue = 123;
-          const n = new Employee("Bob", testValue);
+          const n = new Employee("Bob", testValue, "email@email.com");
           expect(n.getId()).toBe(testValue);
       });
   });
