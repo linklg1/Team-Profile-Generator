@@ -42,6 +42,7 @@ None
 
 ## VideoLink 
 Video of running app:
+https://youtu.be/iBlj8iCx1BE
 
 ## Repo
 
@@ -49,4 +50,4 @@ https://github.com/linklg1/Team-Profile-Generator
 
 ## GeneratedHTML
 
-
+https://github.com/linklg1/Team-Profile-Generator/blob/main/product/team.html
