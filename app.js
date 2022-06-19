@@ -9,9 +9,7 @@ const pathtoproduct = path.resolve(__dirname,"product");
 const htmltoproduct = path.join(pathtoproduct, "team.html");
 const teamobjectarray = [];
 
-
-
-
+// Manager inquiry
 const promptManager = () => {
     inquirer.prompt ([
         {
@@ -42,7 +40,7 @@ const promptManager = () => {
     addTeamMember();
     })
 }
-
+// Engineer inquiry
 const promptEngineer = () => {
   inquirer.prompt ([
       {
@@ -71,7 +69,7 @@ const promptEngineer = () => {
       teamobjectarray.push(EngineerInstance)
       addTeamMember();
   })}
-
+// Intern Inquiry
   const promptIntern = () => {
     inquirer.prompt ([
         {
@@ -101,7 +99,7 @@ const promptEngineer = () => {
         addTeamMember();
     })}
   
-
+// Add tean member option list - no thank you prompts init()
 const addTeamMember = () => {
   inquirer.prompt ([
     {
@@ -124,7 +122,7 @@ const addTeamMember = () => {
   })
 
 }
-
+// write file function
 const init = () => {
     
       // Use writeFileSync method to use promises instead of a callback function

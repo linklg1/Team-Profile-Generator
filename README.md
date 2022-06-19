@@ -9,9 +9,8 @@ This is an app that takes in information about employees on a software engineeri
  3. [Contributing](#Contributing)
  4. [Liscense](#Liscense)
  5. [VideoLink](#VideoLink)
- 6. [ScreenShots](#ScreenShots)
- 7. [Repo](#Repo)
- 8. [GeneratedHTML](#GeneratedHTML)
+ 6. [Repo](#Repo)
+ 7. [GeneratedHTML](#GeneratedHTML)
 
 
 ## Installation
@@ -30,6 +29,7 @@ npm install inquirer
 ? What is your employee id number? 123
 ? What is your email? link@hotmail.com
 ? What is your office number? 456
+? Would you like to add an additional team member?
 ```
 
 ## Contributing
@@ -42,9 +42,6 @@ None
 
 ## VideoLink 
 Video of running app:
-
-## ScreenShots
-
 
 ## Repo
 
